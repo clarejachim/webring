@@ -339,6 +339,7 @@ video {
   grid-column: 4/10;
   grid-row: 19;
   text-align: left;
+  padding-top: 15%;
 }
 .textbox7{
   background: rgb(80, 106, 109, .6);
