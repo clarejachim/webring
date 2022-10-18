@@ -1,0 +1,120 @@
+@media(max-width: 600px){
+
+    body{
+        background-color: aquamarine;
+        height: 100vh;
+    }
+    .position-front {
+        position: relative;
+        height: 100vh;
+        text-align: center;
+        justify-content: center;
+    }
+    video {
+        /** Simulationg background-size: cover */
+        object-fit:contain;
+        height: 100vh;
+        width: 100vw;
+      
+    }
+
+.video-wrapper {
+    /* Telling our absolute positioned video to 
+    be relative to this element */
+    position: relative;
+  
+    width: 100vw;
+    height: 100vh;
+  
+    /* Will not allow the video to overflow the 
+    container */
+    overflow: hidden;
+  
+    /* Centering the container's content vertically 
+    and horizontally */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(28, 1fr);
+        text-align: center;
+        justify-content: center;
+        grid-template-areas:
+        "headerBox"
+        "headBox2"
+        "headerBox3"
+        "subHeaderBox"
+        "text1"
+        "text1a"
+        "text1b"
+        "text2"
+        "text2a"
+        "text2b"
+        "text2c"
+        "text3"
+        "text3a"
+        "text4"
+        "text4a"
+        "text5"
+        "text6"
+        "text6a"
+        "text7"
+        "text7a"
+        "text7b"
+        "text8"
+        "text8a"
+        "text9"
+        "text9a"
+        "text9b"
+        "endSentence"
+        "iconBar"
+        ;
+    } 
+
+    .grid > div {
+        border: .2em darkblue solid;
+    }
+
+    .headerBox { grid-area: 1 / 1 / 2 / 2;
+        background: red;
+        justify-content: center;
+        font-size: 24px;
+    }
+    .headerBox2 { grid-area: 2 / 1 / 3 / 2; 
+    justify-content: center; }
+
+    .headerBox3 { grid-area:  3 / 1 / 4 / 2;}
+    .subHeaderBox { grid-area: 3 / 1 / 4 / 2; }
+    .text1 { grid-area: 5 / 1 / 6 / 2; }
+    .text1a { grid-area: 6 / 1 / 7 / 2; }
+    .text1b { grid-area: 7 / 1 / 8 / 2; }
+    .text2 { grid-area: 8 / 1 / 9 / 2; }
+    .text2a { grid-area: 9 / 1 / 10 / 2; }
+    .text2b { grid-area: 10 / 1 / 11 / 2; }
+    .text2c { grid-area: 11 / 1 / 12 / 2; }
+    .text3 { grid-area: 12 / 1 / 13 / 2; }
+    .text3a { grid-area: 13 / 1 / 14 / 2; }
+    .text4 { grid-area: 14 / 1 / 15 / 2; }
+    .text4a { grid-area: 15 / 1 / 16 / 2; }
+    .text5 { grid-area: 16 / 1 / 17 / 2; }
+    .text6 { grid-area: 17 / 1 / 18 / 2; }
+    .text6a { grid-area: 18 / 1 / 19 / 2; }
+    .text7 { grid-area: 19 / 1 / 20 / 2; }
+    .text7a { grid-area: 20 / 1 / 21 / 2; }
+    .text7b { grid-area: 21 / 1 / 22 / 2; }
+    .text8 { grid-area: 22 / 1 / 23 / 2; }
+    .text8a { grid-area: 23 / 1 / 24 / 2; }
+    .text9 { grid-area: 24 / 1 / 25 / 2; }
+    .text9a { grid-area: 25 / 1 / 26 / 2; }
+    .text9b { grid-area: 26 / 1 / 27 / 2; }
+    .endSentence { grid-area: 27 / 1 / 28 / 2; }
+    .iconBar { grid-area: 28 / 1 / 29 / 2; }
+  
+  }
+  
+  
